@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de pesquisa</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1 id="title">Os mosqueteiros</h1>
+  <p id="description">Formulario de inscrição</p>
+  <form id="survey-form">
+    <input id="name" type="text" required placeholder="Nome"><label id="name-label">Coloque seu nome</label></input>
+    <input id="email" type="email" required placeholder="E-mail"><label id="email-label">Coloque seu e-mail</input>
+    <input id="number" type="number" min="8" max="10" placeholder="Número"><label id="number-label">Coloque seu número</input>
+    <select id="dropdown">
+      <option>Aluno da Digital</option>
+      <option>Aluno do Guanabara</option>
+      <option>Veio por fora</option>
+    </select>
+    <input type="radio" name="motivo" value="Entrada total"></input>
+    <input type="radio" name="motivo" value="Entrada parcial"></input>
+    <input type="checkbox" value="Front-End" value="Front"></input>
+    <input type="checkbox" value="Back-End" value="Back"></input>
+    <input type="checkbox" value="Banco de Dados" value="Banco"></input>
+    <textarea Placeholder="Descreva um pouco sobre você." id="bio" name="bio" rows="3" cols="30"></textarea>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+
+</html>

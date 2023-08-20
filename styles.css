@@ -1,0 +1,14 @@
+@import url(https://fonts.google.com/specimen/Karla);
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Karla", Arial;
+}
+
+body {
+  Background-image: url(https://pbs.twimg.com/media/FuBdwCkWYAMkYae.jpg);
+  
+  width: 100%;
+  height: 100%;
+}
