@@ -12,20 +12,31 @@
   <h1 id="title">Os mosqueteiros</h1>
   <p id="description">Formulario de inscrição</p>
   <form id="survey-form">
-    <input id="name" type="text" required placeholder="Nome"><label id="name-label">Coloque seu nome</label></input>
-    <input id="email" type="email" required placeholder="E-mail"><label id="email-label">Coloque seu e-mail</input>
-    <input id="number" type="number" min="8" max="10" placeholder="Número"><label id="number-label">Coloque seu número</input>
-    <select id="dropdown">
-      <option>Aluno da Digital</option>
-      <option>Aluno do Guanabara</option>
-      <option>Veio por fora</option>
-    </select>
-    <input type="radio" name="motivo" value="Entrada total"></input>
-    <input type="radio" name="motivo" value="Entrada parcial"></input>
-    <input type="checkbox" value="Front-End" value="Front"></input>
-    <input type="checkbox" value="Back-End" value="Back"></input>
-    <input type="checkbox" value="Banco de Dados" value="Banco"></input>
-    <textarea Placeholder="Descreva um pouco sobre você." id="bio" name="bio" rows="3" cols="30"></textarea>
+    <fieldset class="user">
+      <label for="name">Coloque seu nome: <input id="name" name="name" type="text" required
+          placeholder="Exemplo do fulano sicrano"></input></label>
+      <label for="email">Coloque seu e-mail: <input id="email" name="email" type="email" required
+          placeholder="user@exemplo.com" size="64" maxlength="256"></input></label>
+      <label for="phone-number">Coloque seu número: <input id="phone-number" name="phone-number" type="tel"
+          pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" placeholder="Número como de exemplo: 12-12345-1234"></input></label>
+          <label for="age">Sua idade (anos): <input id="age" type="number" name="age" min="15" max="120" required placeholder="Minimo 15 anos" /></label>
+    </fieldset>
+    <fieldset>
+      <lable for="dropdown">Veio por aonde?</lable>
+      <select id="dropdown" name="dropdown">
+        <option>Aluno da Digital College</option>
+        <option>Aluno do Guanabara</option>
+        <option>Veio por fora</option>
+    </fieldset>
+    <fieldset class="escolhas">
+      </select>
+      <label for="motivo"><input type="radio" name="motivo" id="motivo" value="Entrada total" required class="inline"></input> Entrar para o time</label>
+      <label for="motivo"><input type="radio" name="motivo" id="motivo" value="Entrada parcial" class="inline"></input> Participação em algum projeto</label>
+      <label for="Front"><input type="checkbox" value="Front-End" value="Front" class="inline"></input> Trabalha no Front-end?</label>
+      <label for="Back"><input type="checkbox" value="Back-End" value="Back" class="inline"></input> Trabalha no Back-end?</label>
+      <label for="Banco"><input type="checkbox" value="Banco de Dados" value="Banco" class="inline"></input> Trabalha com Banco de dados?</label>
+      <textarea style="text-align: center;" Placeholder="Descreva um pouco sobre você." id="bio" name="bio" rows="5" cols="30"></textarea>
+    </fieldset>
     <button id="submit" type="submit">Submit</button>
   </form>
 </body>
