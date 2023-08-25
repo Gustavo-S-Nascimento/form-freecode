@@ -14,7 +14,8 @@
 
 body {
     Background: linear-gradient(90deg, rgba(14, 14, 14, 1) 25%, rgba(119, 22, 167, 1) 100%);
-    ;
+    align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     display: flex;
@@ -74,8 +75,10 @@ input [type="checkbox"]{
  input,
 textarea,
 select {
-    margin: 0 auto;
-    width: 50%;
+    margin: auto;
+    margin-left: 10vw;
+    margin-top: 1vw;
+    width: 70%;
     min-height: 2em;
     text-align: center;
     display: block;
@@ -94,12 +97,58 @@ textarea {
 .inline {
     width: unset;
     vertical-align: middle;
+    top: 20px;
 }
 
 #submit {
-    width: 20vw;
+    width: 25vw;
     height: 3vw;
     border-radius: 12px;
     border: 1px solid;
     background: #00BFFF;
+    box-shadow: inherit;
+}
+
+.esc {
+    margin-left: 8.8vw;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    input,
+    textarea,
+    select {
+        margin: 0 auto;
+        margin-top: 1vw;
+        width: 30vw;
+        min-height: 2em;
+        text-align: center;
+        display: block;
+        position: relative;
+        top: -1px;
+    }
+    
+    input,
+    textarea {
+        /*background-color: ;*/
+        border: 1px solid #0a0a23;
+        color: #000000;
+        vertical-align: middle;
+    } 
+    
+    .inline {
+        width: unset;
+        vertical-align: middle;
+        top: 20px;
+    }
+    
+    #submit {
+        width: 25vw;
+        height: 3vw;
+        border-radius: 12px;
+        border: 1px solid;
+        background: #00BFFF;
+        box-shadow: inherit;
+    }
 }
