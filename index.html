@@ -9,12 +9,24 @@
 </head>
 
 <body>
-  <main>
-    <div class="overlay">
+  <header>
+    <div class="header-container">
       <div class="logo">
-        <h1 id="title">Open <span>Rage</span></h1>
-        <p id="description">Formulario de inscrição</p>
+        <img
+          src="https://github.com/Gustavo-S-Nascimento/form-freecode/assets/74427958/aac01185-b17f-44f4-b2ff-8cc469005c57"
+          alt="Logo Open Rage">
       </div>
+      <div class="nome">
+        <h1>OpenRage</h1>
+        <h1>OpenRage</h1>
+      </div>
+      <div class="info">
+        <p>Formulario de inscrição</p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="form">
       <div class="container-form">
         <form id="survey-form" method="post" action="https://formspree.io/f/xwkdodby">
           <div class="user-info">
@@ -30,15 +42,15 @@
             </fieldset>
           </div>
           <div class="origin">
-            <fieldset>
-              <lable for="dropdown">Veio por aonde?</lable>
-              <select id="dropdown" name="dropdown">
-                <option>Aluno da Digital College</option>
-                <option>Aluno do Guanabara</option>
-                <option>Veio por fora</option>
-            </fieldset>
-            <fieldset>
-              </select>
+            <fieldset class="origin-info">
+              <div class="local">
+                <label for="dropdown">Veio por aonde?</label>
+                <select id="dropdown" name="dropdown">
+                  <option>Aluno da Digital College</option>
+                  <option>Aluno do Guanabara</option>
+                  <option>Veio por fora</option>
+                </select>
+              </div>
               <div class="escolhas">
                 <label for="motivo"><input type="radio" name="motivo" id="motivo" value="Entrada total" required
                     class="inline esc"></input> Entrar para o time</label>
@@ -56,10 +68,14 @@
                     class="inline esc"></input>
                   Trabalha com Banco de dados?</label>
               </div>
-              <textarea style="text-align: center;" Placeholder="Descreva um pouco sobre você." id="bio" name="bio"
-                rows="5" cols="30"></textarea>
-                <input id="submit" type="submit" value="Enviar">
+              <div class="descreva">
+                <textarea style="text-align: center;" Placeholder="Descreva um pouco sobre você." id="bio" name="bio"
+                  rows="5" cols="30"></textarea>
+              </div>
             </fieldset>
+          </div>
+          <div class="button">
+            <input id="submit" type="submit" value="Enviar">
           </div>
         </form>
       </div>
